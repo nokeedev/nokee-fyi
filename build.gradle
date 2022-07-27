@@ -13,11 +13,27 @@ repositories {
 }
 
 dependencies {
-	jbake 'dev.nokee.docs:dotgithub:latest.release'
+	jbake 'dev.nokee.docs:layout-page:latest.release'
 }
 
 site {
 	customDomain = subdomain('nokee.fyi')
 	repositorySlug = 'nokeedev/nokee-fyi'
 	sources.from(jbake.destinationDirectory)
+}
+
+jbake {
+	content.from('content')
+	templates.from('templates')
+	configurations.putAll([
+		'render.tags': false,
+		'render.sitemap': false,
+		'render.index': false,
+		'render.archive': false,
+		'render.post': false,
+		'render.page': false,
+		'render.feed': false,
+		'site.host': 'https://nokee.fyi',
+		'template.fyi-article.file': 'fyi-article.tpl',
+	])
 }

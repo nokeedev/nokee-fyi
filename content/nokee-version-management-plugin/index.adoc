@@ -1,0 +1,14 @@
+:idprefix:
+:icons: font
+:encoding: utf-8
+:lang: en-US
+:sectanchors: true
+:sectlinks: true
+:linkattrs: true
+= Nokee version management plugin
+:jbake-type: fyi-article
+:jbake-status: published
+:jbake-tags: nokee-plugin, gradle plugin reference, gradle, plugin, fyi
+:jbake-description: Learn what the Nokee Version Management plugin (e.g. dev.nokee.nokee-version-management) has to offer for your Gradle build.
+
+Nokee version management plugin, e.g. `dev.nokee.nokee-version-management`, manage Nokee version and related configuration for your Gradle build.
