@@ -1,0 +1,22 @@
+:idprefix:
+:icons: font
+:encoding: utf-8
+:lang: en-US
+:sectanchors: true
+:sectlinks: true
+:linkattrs: true
+= nokee.fyi
+:jbake-type: fyi-index
+:jbake-status: published
+:jbake-tags: fyi, nokee
+:jbake-description: Learn about the nokee.fyi knowledge base.
+
+*TL;DR:* It's a site to link people to information-based article about the link:https://nokee.dev[Nokee project].
+
+== What is it?
+
+This website present information-based articles about various aspect of the link:https://nokee.dev[Nokee project].
+Each article lives under the https://github.com/nokeedev/nokee-fyi repository.
+
+It is useful to remove any friction to creating a shareable link to a persistent explanation of some piece of knowledge that is useful to developers using Nokee plugins.
+

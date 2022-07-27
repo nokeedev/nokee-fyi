@@ -23,6 +23,11 @@ site {
 }
 
 jbake {
+	content.from(sync('content') {
+		from('README.adoc') {
+			rename('README.adoc', 'index.adoc')
+		}
+	})
 	content.from('content')
 	templates.from('templates')
 	configurations.putAll([
@@ -34,6 +39,7 @@ jbake {
 		'render.page': false,
 		'render.feed': false,
 		'site.host': 'https://nokee.fyi',
+		'template.fyi-index.file': 'fyi-index.tpl',
 		'template.fyi-article.file': 'fyi-article.tpl',
 	])
 }
