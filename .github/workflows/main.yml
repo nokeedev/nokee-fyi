@@ -1,0 +1,16 @@
+name: CI
+
+on: push
+
+jobs:
+  deploy:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        submodules: true
+    - name: Publish to GitHub Pages
+      run: ./gradlew publishToGitHubPages --stacktrace --scan -PpublishToGitHubPagesUsername=nokeedevbot "-PpublishToGitHubPagesPassword=${{ secrets.GITHUB_TOKEN }}"
+
